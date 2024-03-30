@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "target": "es2022",
+    "resolveJsonModule": true,
+    "strict": true,
+    "moduleDetection": "force",
+    "noUncheckedIndexedAccess": true,
+    "moduleResolution": "Node",
+    "module": "ESNext",
+    "noEmit": true,
+    "lib": ["es2022"],
+    "forceConsistentCasingInFileNames": true
+  },
+  "exclude": ["node_modules"],
+  "include": ["src/**/*.ts"]
+}
