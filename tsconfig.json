@@ -9,8 +9,9 @@
     "moduleDetection": "force",
     "noUncheckedIndexedAccess": true,
     "moduleResolution": "Node",
-    "module": "ESNext",
-    "noEmit": true,
+    "module": "CommonJS",
+    "noEmit": false,
+    "outDir": "./dist",
     "lib": ["es2022"],
     "forceConsistentCasingInFileNames": true
   },

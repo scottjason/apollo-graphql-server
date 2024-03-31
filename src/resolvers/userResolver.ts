@@ -2,17 +2,13 @@ import { User } from '../db/models/user';
 
 export const userResolver = {
   Query: {
-    getUserById: async (_: any, { id }: { id: string }) => {
+    getUserById: async (_: unknown, { id }: { id: string }) => {
       return await User.findById(id);
     },
   },
   Mutation: {
-    createUser: async (_: any, { email }: { email: string }) => {
-      const newUser = await User.create({ email });
-      return {
-        id: newUser._id.toString(),
-        email: newUser.email,
-      };
+    createUser: async (_: unknown, { email }: { email: string }) => {
+      return await User.create({ email });
     },
   },
 };
